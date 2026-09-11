@@ -1,0 +1,11 @@
+Category,Manufacturer Part Number,Description & Specification,Qty,Unit Cost (1k Vol),Unit Cost (10k Vol)
+RF Switch,Menlo Micro MM5130-01ENR,DC-26 GHz SP4T RF-MEMS Switch QFN,1,$18.50,$15.20
+HV Gate Driver,Menlo Micro MM101-01ENR,4-Ch High Voltage Driver 3.3V to 88V QFN-32,1,$6.20,$4.80
+Baseband SoC,MediaTek MT7621AT,Dual-Core MIPS 880MHz Networking Processor,1,$7.80,$6.10
+Wi-Fi Radio,MediaTek MT7915D,2x2/4x4 Wi-Fi 6E PCIe Module,1,$12.40,$9.80
+System RAM,Winbond W631GU6NB12I,1Gb DDR3L SDRAM 1600Mbps BGA,1,$2.10,$1.65
+Flash Memory,Winbond W25N01GVZEIG,1Gb SPI NAND Flash 3.3V,1,$1.15,$0.90
+Power Management,Texas Instruments TPS54331DDA,3.5V-28V Input 3A Step-Down Buck Converter,1,$0.85,$0.62
+LDO Regulators,Diodes Inc. AP2112K-3.3TRG1,3.3V 600mA Low-Noise LDO,2,$0.22,$0.15
+Substrate,Rogers RO4350B Hybrid,4-Layer Custom Stackup Board,1,$8.50,$5.20
+Passives & Misc,Various,Shunts chokes caps connectors and crystals,1 Set,$3.50,$2.15
