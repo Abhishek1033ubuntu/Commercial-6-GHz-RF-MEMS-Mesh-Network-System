@@ -1,0 +1,17 @@
+# C/Linux Kernel Build Artifacts
+*.o
+*.ko
+*.mod
+*.mod.c
+*.symvers
+*.order
+.tmp_versions/
+
+# Python Cache & Artifacts
+__pycache__/
+*.py[cod]
+
+# IDE and OS Files
+.DS_Store
+.vscode/
+.idea/
