@@ -9,6 +9,7 @@
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23761022-blue?style=for-the-badge&logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.23761022) 
 ![Latest Release](https://img.shields.io/github/v/release/Abhishek1033ubuntu/Commercial-6-GHz-RF-MEMS-Mesh-Network-System?color=blue)
 ![SemVer](https://img.shields.io/badge/SemVer-2.0.0-brightgreen.svg)
+[![PyPI Version](https://img.shields.io/pypi/v/rf-mems-mesh-sim?color=blue)](https://pypi.org/project/rf-mems-mesh-sim/)  
 
 High-performance 6 GHz Wi-Fi mesh node utilizing **Menlo Micro RF-MEMS switches** for ultralow loss, full-duplex backhaul capacity across multi-hop node topologies.
 
@@ -87,6 +88,14 @@ make test
 
 # Build Linux kernel driver module
 make firmware
+```
+
+## Python Package Installation
+
+Install the simulation suite directly via `pip`:
+
+```bash
+pip install rf-mems-mesh-sim
 ```
 
 ## Licensing & Author Attribution  
