@@ -67,7 +67,7 @@ Commercial-grade, high-performance Wi-Fi/6 GHz mesh node leveraging Menlo Micro 
 └── README.md                         # Public repository landing page & badge index
 ├── pyproject.toml                     # Modern Build System Config (Flit/Setuptools)
 ├── setup.cfg                          # Package Metadata
-├── src/
+├── python_pkg/
 │   └── rf_mems_mesh_sim/
 │       ├── __init__.py                # Package Exports
 │       ├── cpwg_model.py              # Rogers RO4350B S-parameter calculations
