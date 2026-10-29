@@ -19,7 +19,7 @@ High-performance 6 GHz Wi-Fi mesh node utilizing **Menlo Micro RF-MEMS switches*
 
 **Author:** Abhishek Singh ( UIDAI: 9414 9122 9013) 
 
-AI Technical Collaborator: Google Gemini
+**AI Technical Collaborator:** Google Gemini
 
 This project is released under the **Apache License 2.0**. You are free to use, modify, and distribute this software and hardware design for both non-commercial and commercial purposes under the terms of the Apache 2.0 License.
 
