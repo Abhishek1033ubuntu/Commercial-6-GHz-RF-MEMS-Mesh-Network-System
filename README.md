@@ -55,8 +55,7 @@ Commercial-grade, high-performance Wi-Fi/6 GHz mesh node leveraging Menlo Micro 
 │   └── financial_and_tech_sim.py     # Colab / Python Monte-Carlo unit economics sim
 ├── .gitignore                        # Build artifact exclusions
 ├── CLA.md                            # Contributor License Agreement for dual-licensing
-├── LICENSE                           # AGPL-3.0 (Open-source copyleft license)
-├── LICENSE-COMMERCIAL.md             # Commercial OEM & Enterprise License Terms
+├── LICENSE                           # Apache License, Version 2.0
 ├── Makefile                          # Top-level repository orchestration script
 └── README.md                         # Public repository landing page & badge index
 ```
