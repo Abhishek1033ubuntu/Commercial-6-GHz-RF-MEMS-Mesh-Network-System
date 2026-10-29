@@ -43,6 +43,7 @@ Commercial-grade, high-performance Wi-Fi/6 GHz mesh node leveraging Menlo Micro 
 │       └── build-test.yml            # Automated kernel compile & Python sim check
 ├── docs/
 │   ├── BOM_MASTER.csv                # Complete manufacturing BOM with 1k/10k pricing
+│   ├── FABRICATION_GUIDE.md          # Gerber export & OpenWrt compilation guide 
 │   ├── FINANCIAL_AND_COMPETITIVE_ANALYSIS.md
 │   └── RF_6GHZ_STACKUP_SPEC.md       # Rogers RO4350B 50Ω CPWG specification
 ├── firmware/
