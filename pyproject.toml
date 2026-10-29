@@ -5,11 +5,18 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "rf-mems-mesh-sim"
 version = "1.0.0"
-authors = [
-  { name="Abhishek Singh", email="abhishek1033@gmail.com" },
-]
 description = "Simulation suite for 6 GHz Rogers RO4350B CPWG traces and Menlo Micro RF-MEMS cold-switching dynamics."
-readme = "README.md"
+keywords = [
+    "rf-mems",
+    "6ghz",
+    "menlo-micro",
+    "ro4350b",
+    "cpwg",
+    "cold-switching",
+    "s-parameters",
+    "openwrt",
+    "unit-economics"
+]readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [
     "Programming Language :: Python :: 3",
