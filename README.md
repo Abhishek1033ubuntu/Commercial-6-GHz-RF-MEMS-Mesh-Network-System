@@ -1,5 +1,22 @@
 # Commercial 6 GHz RF-MEMS Mesh Network System
 
+![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
+![AI Collaborator](https://img.shields.io/badge/Co--Engineered%20With-Google%20Gemini-8E75B5?logo=googlegemini&logoColor=white)
+![Build](https://img.shields.io/badge/OpenWrt%20Build-Passing-brightgreen.svg)
+![RF Spectrum](https://img.shields.io/badge/RF%20Band-UNII--5..8%20(5.925--7.125%20GHz)-orange.svg)
+![Hardware](https://img.shields.io/badge/PCB-Rogers%20RO4350B%204--Layer-red.svg)
+
+High-performance 6 GHz Wi-Fi mesh node utilizing **Menlo Micro RF-MEMS switches** for ultralow loss, full-duplex backhaul capacity across multi-hop node topologies.
+
+## Licensing & Author Attribution
+
+**Author:** Abhishek Singh (<abhishek1033@gmail.com>)
+
+This project is released under the **Apache License 2.0**. You are free to use, modify, and distribute this software and hardware design for both non-commercial and commercial purposes under the terms of the Apache 2.0 License.
+
+For custom enterprise development, hardware fabrication consulting, or proprietary licensing inquiries, please contact the author directly.
+
+
 Commercial-grade, high-performance Wi-Fi/6 GHz mesh node leveraging Menlo Micro RF-MEMS switches for full-duplex backhaul capacity and zero-bandwidth degradation across multi-hop topologies.
 
 ## System Highlights
@@ -11,15 +28,63 @@ Commercial-grade, high-performance Wi-Fi/6 GHz mesh node leveraging Menlo Micro 
 
 ## Directory Structure
 ```
-├── hardware/
-│   ├── MASTER_NODE_N00_6GHZ.net
-│   └── pcb_stackup_spec.md
-├── firmware/
-│   ├── mems_mesh_driver.c
-│   └── Makefile
+.
+├── .github/
+│   ├── ISSUE_TEMPLATE/
+│   │   ├── bug_report.md
+│   │   └── feature_request.md
+│   └── workflows/
+│       └── build-test.yml            # Automated kernel compile & Python sim check
 ├── docs/
+│   ├── BOM_MASTER.csv                # Complete manufacturing BOM with 1k/10k pricing
 │   ├── FINANCIAL_AND_COMPETITIVE_ANALYSIS.md
-│   └── BOM_MASTER.csv
-└── scripts/
-└── financial_and_tech_sim.py
+│   └── RF_6GHZ_STACKUP_SPEC.md       # Rogers RO4350B 50Ω CPWG specification
+├── firmware/
+│   ├── Makefile                      # OpenWrt Buildroot package recipe
+│   └── src/
+│       ├── Kbuild                    # Linux Kernel build rules
+│       ├── Makefile                  # Local C compiler Makefile
+│       └── mems_mesh_driver.c        # <10µs cold-switching kernel module
+├── hardware/
+│   ├── gerbers/                      # Ready-to-order manufacturing zip/gerbers
+│   │   ├── MASTER_NODE-F_Cu.gbr
+│   │   └── MASTER_NODE-Drill.drl
+│   ├── MASTER_NODE_N00_6GHZ.kicad_pcb# KiCad PCB trace routing file
+│   └── MASTER_NODE_N00_6GHZ.net      # Hardware schematic netlist
+├── scripts/
+│   └── financial_and_tech_sim.py     # Colab / Python Monte-Carlo unit economics sim
+├── .gitignore                        # Build artifact exclusions
+├── CLA.md                            # Contributor License Agreement for dual-licensing
+├── LICENSE                           # AGPL-3.0 (Open-source copyleft license)
+├── LICENSE-COMMERCIAL.md             # Commercial OEM & Enterprise License Terms
+├── Makefile                          # Top-level repository orchestration script
+└── README.md                         # Public repository landing page & badge index
 ```
+## Quick Start & Local Verification
+
+```bash
+# Clone the repository
+git clone [https://github.com/your-org/rf-mems-mesh-node.git](https://github.com/your-org/rf-mems-mesh-node.git)
+cd rf-mems-mesh-node
+
+# Run feasibility & financial simulations
+make test
+
+# Build Linux kernel driver module
+make firmware
+```
+
+## Licensing & Author Attribution  
+
+**Lead Author & Principal Investigator:** Abhishek Singh | UIDAI: 9414 9122 9013 (<abhishek1033@gmail.com> | <abhishek.singh.941491229013@proton.me>)
+
+AI Technical Collaborator: Google Gemini
+
+Licensed under the Apache License, Version 2.0 (the "License"). You may obtain a copy of the License in the LICENSE file or at http://www.apache.org/licenses/LICENSE-2.0.
+
+## ⚡ Support
+
+| Platform | Link |
+| :--- | :--- |
+| **PayPal** | [![PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg?logo=paypal)](https://www.paypal.me/Abhishek1033ubuntu) |
+| **GitHub Sponsors** | [![GitHub Sponsors](https://img.shields.io/badge/Sponsor-GitHub-ea4aaa.svg?logo=github)](https://github.com/sponsors/Abhishek1033ubuntu) |
