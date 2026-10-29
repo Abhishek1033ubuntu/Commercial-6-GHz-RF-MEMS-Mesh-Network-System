@@ -88,3 +88,23 @@ Licensed under the Apache License, Version 2.0 (the "License"). You may obtain a
 | :--- | :--- |
 | **PayPal** | [![PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg?logo=paypal)](https://www.paypal.me/Abhishek1033ubuntu) |
 | **GitHub Sponsors** | [![GitHub Sponsors](https://img.shields.io/badge/Sponsor-GitHub-ea4aaa.svg?logo=github)](https://github.com/sponsors/Abhishek1033ubuntu) |
+
+
+## Citation & Attribution
+
+If you use this reference hardware design, OpenWrt kernel module, or 6 GHz RF-MEMS simulation code in your academic research, commercial product, or technical report, please cite this project as follows:
+
+**APA Style:**
+> Singh, A. (2026). *Commercial 6 GHz RF-MEMS Mesh Network System* (Version 1.0.0) [Hardware Reference Design & OpenWrt Firmware]. GitHub. https://github.com/Abhishek1033ubuntu/Commercial-6-GHz-RF-MEMS-Mesh-Network-System
+
+**BibTeX Entry (for LaTeX & Academic Papers):**
+```bibtex
+@misc{singh2026rfmemsmesh,
+  author       = {Singh, Abhishek},
+  title        = {{Commercial 6 GHz RF-MEMS Mesh Network System}},
+  year         = {2026},
+  publisher    = {GitHub},
+  journal      = {GitHub Repository},
+  howpublished = {\url{[https://github.com/Abhishek1033ubuntu/Commercial-6-GHz-RF-MEMS-Mesh-Network-System](https://github.com/Abhishek1033ubuntu/Commercial-6-GHz-RF-MEMS-Mesh-Network-System)}},
+  note         = {Co-Engineered with Google Gemini. Distributed under the Apache License 2.0}
+}
