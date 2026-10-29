@@ -6,6 +6,9 @@
 ![Build](https://img.shields.io/badge/OpenWrt%20Build-Passing-brightgreen.svg)
 ![RF Spectrum](https://img.shields.io/badge/RF%20Band-UNII--5..8%20(5.925--7.125%20GHz)-orange.svg)
 ![Hardware](https://img.shields.io/badge/PCB-Rogers%20RO4350B%204--Layer-red.svg)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23761022-blue?style=for-the-badge&logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.23761022) 
+![Latest Release](https://img.shields.io/github/v/release/Abhishek1033ubuntu/Commercial-6-GHz-RF-MEMS-Mesh-Network-System?color=blue)
+![SemVer](https://img.shields.io/badge/SemVer-2.0.0-brightgreen.svg)
 
 High-performance 6 GHz Wi-Fi mesh node utilizing **Menlo Micro RF-MEMS switches** for ultralow loss, full-duplex backhaul capacity across multi-hop node topologies.
 
