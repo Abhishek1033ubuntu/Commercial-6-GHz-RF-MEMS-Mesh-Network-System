@@ -1,5 +1,6 @@
 # Commercial 6 GHz RF-MEMS Mesh Network System
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Abhishek1033ubuntu/Commercial-6-GHz-RF-MEMS-Mesh-Network-System/blob/main/scripts/RF_6GHz_MEMS_Simulation.ipynb)
 ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
 ![AI Collaborator](https://img.shields.io/badge/Co--Engineered%20With-Google%20Gemini-8E75B5?logo=googlegemini&logoColor=white)
 ![Build](https://img.shields.io/badge/OpenWrt%20Build-Passing-brightgreen.svg)
