@@ -1,4 +1,10 @@
-.PHONY: all clean test firmware docs help
+.PHONY: all clean test firmware docs pypi help
+
+pypi:
+	@echo "Building PyPI package distribution..."
+	python3 -m pip install --upgrade build twine
+	python3 -m build
+	@echo "Package ready! Upload using: python3 -m twine upload dist/*"
 
 Default target runs when typing just make
 
