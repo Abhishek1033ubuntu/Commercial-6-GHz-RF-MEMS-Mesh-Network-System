@@ -1,0 +1,32 @@
+name: CI Firmware & Simulation Build Check
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.10"
+
+    - name: Run Financial & Technical Simulation
+      run: |
+        python scripts/financial_and_tech_sim.py
+
+    - name: Install Linux Kernel Headers
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y linux-headers-$(uname -r) build-essential
+
+    - name: Compile C Kernel Driver Module
+      run: |
+        make firmware
