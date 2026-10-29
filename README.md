@@ -71,11 +71,11 @@ Commercial-grade, high-performance Wi-Fi/6 GHz mesh node leveraging Menlo Micro 
 ├── pyproject.toml                     # Modern Build System Config (Flit/Setuptools)
 ├── setup.cfg                          # Package Metadata
 ├── python_pkg/
-│   └── rf_mems_mesh_sim/
-│       ├── __init__.py                # Package Exports
-│       ├── cpwg_model.py              # Rogers RO4350B S-parameter calculations
-│       ├── cold_switch.py             # Sub-10µs cold-switching timing dynamics
-│       └── economics.py               # Unit COGS & Monte-Carlo financial model
+     └── rf_mems_mesh_sim/
+         ├── __init__.py                # Package Exports
+         ├── cpwg_model.py              # Rogers RO4350B S-parameter calculations
+         ├── cold_switch.py             # Sub-10µs cold-switching timing dynamics
+         └── economics.py               # Unit COGS & Monte-Carlo financial model
 
 ```
 ## Quick Start & Local Verification
