@@ -1,44 +1,31 @@
-.PHONY: all clean test firmware docs pypi help
-
-pypi:
-	@echo "Building PyPI package distribution..."
-	python3 -m pip install --upgrade build twine
-	python3 -m build
-	@echo "Package ready! Upload using: python3 -m twine upload dist/*"
-
-Default target runs when typing just make
+.PHONY: all clean test firmware pypi help
 
 all: firmware test
 
-help:
-@echo ""
-@echo " Commercial 6 GHz RF-MEMS Mesh Network System — Build & Automation Menu "
-@echo ""
-@echo ""
-@echo " Available Commands:"
-@echo "   make help       - Display this assistance menu and usage instructions."
-@echo "   make test       - Execute Python/scikit-rf simulation & COGS unit economics."
-@echo "   make firmware   - Compile local C kernel module (mems_mesh_driver.ko)."
-@echo "   make clean      - Remove firmware build artifacts and temp files."
-@echo "   make docs       - Open and view the board fabrication & OpenWrt guide."
-@echo ""
-@echo " Documentation & Fabrication Pointer:"
-@echo "   For step-by-step KiCad Gerber export guidelines and OpenWrt SDK integration,"
-@echo "   please refer directly to: docs/FABRICATION_GUIDE.md"
-@echo "========================================================================"
-
 firmware:
-@echo "Building Kernel Module via local toolchain..."
-$(MAKE) -C firmware/src
+	@echo "Checking C Kernel Driver Syntax..."
+	gcc -fsyntax-only firmware/mems_mesh_driver.c
+	@echo "Driver syntax OK."
 
 test:
-@echo "Running Financial & Technical Feasibility Simulation..."
-python3 scripts/financial_and_tech_sim.py
+	@echo "Running Technical & Financial Simulations..."
+	python3 scripts/financial_and_tech_sim.py
 
-docs:
-@echo "Refer to docs/FABRICATION_GUIDE.md for fabrication and build instructions:"
-@cat docs/FABRICATION_GUIDE.md 2>/dev/null || echo "File docs/FABRICATION_GUIDE.md not found."
+pypi:
+	@echo "Building PyPI distribution..."
+	python3 -m pip install --upgrade build twine
+	python3 -m build
+	@echo "Distribution ready in dist/"
 
 clean:
-@echo "Cleaning build artifacts..."
-$(MAKE) -C firmware/src clean
+	@echo "Cleaning temporary build files..."
+	rm -rf dist/ *.egg-info build/ firmware/*.o firmware/*.ko
+
+help:
+	@echo "Commercial 6 GHz RF-MEMS Mesh System - Build Targets:"
+	@echo "  make firmware  - Syntax-check C kernel driver"
+	@echo "  make test      - Run Python RF & financial simulations"
+	@echo "  make pypi      - Build PyPI release package"
+	@echo "  make clean     - Remove temporary build artifacts"
+	@echo ""
+	@echo "See docs/FABRICATION_GUIDE.md for hardware Gerber export instructions."
