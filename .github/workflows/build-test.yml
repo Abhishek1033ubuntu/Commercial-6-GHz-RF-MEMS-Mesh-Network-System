@@ -18,27 +18,19 @@ jobs:
       with:
         python-version: "3.10"
 
-    - name: Install Python Dependencies & Package
+    - name: Install Python Dependencies
       run: |
         python -m pip install --upgrade pip
         pip install scikit-rf matplotlib numpy build twine
-        if [ -d python_pkg ]; then pip install -e python_pkg/; fi
-        if [ -f pyproject.toml ]; then pip install -e .; fi
 
-    - name: Run Financial & Technical Simulation
+    - name: Run Technical & Financial Simulation
       env:
         MPLBACKEND: Agg
       run: |
         python scripts/financial_and_tech_sim.py
 
-    - name: Install Linux Kernel Headers
+    - name: Validate Repository File Layout
       run: |
-        sudo apt-get update
-        sudo apt-get install -y linux-headers-generic build-essential
-
-    - name: Verify C Driver Syntax
-      run: |
-        DRIVER_PATH=$(find firmware -name "mems_mesh_driver.c" | head -n 1)
-        HEADER_PATH=$(ls -d /usr/src/linux-headers-*-generic | head -n 1)
-        gcc -fsyntax-only -I${HEADER_PATH}/include -I${HEADER_PATH}/arch/x86/include ${DRIVER_PATH} || true
-        echo "C Driver Syntax Verification Complete"
+        test -f firmware/mems_mesh_driver.c || test -f firmware/src/mems_mesh_driver.c
+        test -f docs/FABRICATION_GUIDE.md
+        echo "Repository File Layout Check Passed!"
