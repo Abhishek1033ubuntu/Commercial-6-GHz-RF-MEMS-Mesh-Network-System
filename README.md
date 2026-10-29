@@ -97,6 +97,21 @@ Install the simulation suite directly via `pip`:
 ```bash
 pip install rf-mems-mesh-sim
 ```
+## Quick Usage
+Python
+
+```
+import rf_mems_mesh_sim as sim
+
+# 1. CPWG & Switch S-parameter simulation
+sim.simulate_cpwg_sparameters()
+
+# 2. Sub-10us cold-switching timing
+sim.simulate_cold_switching()
+
+# 3. Unit economics calculation
+print(sim.calculate_unit_economics(10000))
+```
 
 ## Licensing & Author Attribution  
 
