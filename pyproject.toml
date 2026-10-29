@@ -26,3 +26,7 @@ dependencies = [
 [project.urls]
 "Homepage" = "https://github.com/Abhishek1033ubuntu/Commercial-6-GHz-RF-MEMS-Mesh-Network-System"
 "Bug Tracker" = "https://github.com/Abhishek1033ubuntu/Commercial-6-GHz-RF-MEMS-Mesh-Network-System/issues"
+
+# --- ADD THIS SECTION BELOW TO FIX THE BUILD ---
+[tool.setuptools.packages.find]
+where = ["python_pkg"]
