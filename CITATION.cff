@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this hardware design, firmware, or simulation suite in your work, please cite it using the metadata below."
+authors:
+  - family-names: "Singh"
+    given-names: "Abhishek"
+    email: "abhishek1033@gmail.com"
+    orcid: "https://orcid.org/0009-0004-6913-096X"
+title: "Commercial 6 GHz RF-MEMS Mesh Network System"
+version: 1.0.0
+date-released: 2026-10-29
+url: "https://github.com/Abhishek1033ubuntu/Commercial-6-GHz-RF-MEMS-Mesh-Network-System"
+license: Apache-2.0
+keywords:
+  - "RF-MEMS"
+  - "Menlo Micro MM5130"
+  - "6 GHz Mesh"
+  - "OpenWrt"
+  - "Rogers RO4350B"
+  - "Cold-Switching"
