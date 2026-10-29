@@ -65,6 +65,15 @@ Commercial-grade, high-performance Wi-Fi/6 GHz mesh node leveraging Menlo Micro 
 ├── LICENSE                           # Apache License, Version 2.0
 ├── Makefile                          # Top-level repository orchestration script
 └── README.md                         # Public repository landing page & badge index
+├── pyproject.toml                     # Modern Build System Config (Flit/Setuptools)
+├── setup.cfg                          # Package Metadata
+├── src/
+│   └── rf_mems_mesh_sim/
+│       ├── __init__.py                # Package Exports
+│       ├── cpwg_model.py              # Rogers RO4350B S-parameter calculations
+│       ├── cold_switch.py             # Sub-10µs cold-switching timing dynamics
+│       └── economics.py               # Unit COGS & Monte-Carlo financial model
+
 ```
 ## Quick Start & Local Verification
 
